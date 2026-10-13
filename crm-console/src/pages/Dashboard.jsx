@@ -1,5 +1,9 @@
-function Dashboard() {
-  return <div>Dashboard</div>;
-}
+import LeadDistribution from "./LeadDistribution.jsx";
 
-export default Dashboard;
+export default function Dashboard({ user }) {
+  return (
+    <>
+      <LeadDistribution user={user} />
+    </>
+  );
+}

@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  /* Font */
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand */
+  --color-ink: #0e2233; /* sidebar */
+  --color-brand: #0a8f83;
+  --color-brand-dark: #077a70;
+  --color-brand-tint: #e4f5f2;
+
+  /* Layout / text */
+  --color-page: #f4f6f8;
+  --color-line: #e2e7ed;
+  --color-body: #17232f;
+  --color-muted: #667686;
+
+  /* Pipeline status colors */
+  --color-st-new: #2f6fed;
+  --color-st-contacted: #7c5ce0;
+  --color-st-interested: #d99a00;
+  --color-st-quotation: #e8772e;
+  --color-st-negotiation: #d6457b;
+  --color-st-won: #1e9e5a;
+  --color-st-lost: #d64545;
+
+  /* Alerts / Unassigned badge */
+  --color-warn-bg: #fff4d6;
+  --color-warn-text: #8a5a00;
+  --color-info-bg: #e7f0fe;
+  --color-info-text: #1d4fb8;
+  --color-danger: #d64545;
+
+  /* Border radius */
+  --radius-card: 12px;
+  --radius-control: 8px;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-page);
+    color: var(--color-body);
+    font-family: var(--font-sans);
+    font-size: 15px;
+  }
+}
